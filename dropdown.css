@@ -1,0 +1,60 @@
+
+.menuBackground {
+	background: none;
+	text-align: center;
+	word-spacing: 65px;
+}
+.dropDownMenu a {
+	color: #ff0000;
+	Font-family: Stencil Std, fantasy, sans-serif;
+	font-size: 30px;
+	letter-spacing: 12px;
+	
+}
+.dropDownMenu,
+.dropDownMenu ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.dropDownMenu li {
+	position: relative;
+}
+.dropDownMenu a {
+	padding: 10px 20px;
+	display: block;
+	text-decoration: none;
+}
+.dropDownMenu a:hover {
+	background: yellow;
+}
+
+
+/* Level 1 Drop Down */
+.dropDownMenu > li {
+	display: inline-block;
+	vertical-align: top;
+	margin-left: -4px; 
+}
+.dropDownMenu > li:first-child {
+	margin-left: 0;
+}
+
+/* Level 2 */
+.dropDownMenu ul {
+	box-shadow: 2px 2px 15px 0 rgba(0,0,0, 0.5);
+}
+.dropDownMenu > li > ul {
+	text-align: left;
+	display: none;
+	background: yellow;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	width: 240px;
+	z-index: 999999; 
+}
+
+body{
+	background: black;
+}
